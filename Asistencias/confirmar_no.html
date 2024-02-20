@@ -1,0 +1,29 @@
+<!-- confirmar_no.php -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia - Confirmar No</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <link rel="stylesheet" href="confirmar_no.css">
+</head>
+<body>
+    <h1>REGISTRATE AHORA</h1>
+    
+    <!-- Formulario para completar Nombre, Apellido y Celular -->
+    <form action="procesar_confirmacion_no.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" required><br>
+
+        <label for="celular">Celular:</label>
+        <input type="text" pattern="\d*" name="celular" required><br>
+        <a href="index.html" class="back-to-index">Volver atrás</a>
+        <button type="submit">Confirmar</button>
+    </form>
+</body>
+</html>

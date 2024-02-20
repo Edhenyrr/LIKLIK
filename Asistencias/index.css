@@ -1,0 +1,61 @@
+/* index.css */
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: -20px;
+    font-size: 2em; /* Tamaño de fuente más grande */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('CO-WORKING.JPG'); /* Reemplaza 'CO-WORKING.JPG' con la ruta correcta a tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #a268ee;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: -20px;
+    font-size: 2em; /* Tamaño de fuente más grande */
+}
+
+button {
+    color: #000000;
+    padding: 17px 32px; /* Ajuste de padding para agrandar los botones */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.6s ease; /* Agregamos una transición suave al cambio de color */
+}
+
+button.specific-yes {
+    background-color: #00ff08 !important; /* Verde fijo para "Sí" */
+}
+
+button.specific-no {
+    background-color: #ff1900 !important; /* Rojo fijo para "No" */
+}
+
+button:hover {
+    background-color: #07f77f;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    button {
+        padding: 15px 28px; /* Ajuste de padding para botones en pantallas más pequeñas */
+    }
+}
